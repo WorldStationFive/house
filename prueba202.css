@@ -1,0 +1,88 @@
+body{
+    background-color: rgba(233, 197, 144, 0.575);
+    margin: 0px;
+    padding: 0px;
+}
+p{
+    font-family: cursive;
+    animation: 0.2s recargap1 1;
+}
+@keyframes recargap1{
+    30%{
+        background: rgb(255, 255, 255);
+        opacity: 0
+    }
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style:none;
+}
+li{
+    margin: 0px;
+    padding: 0px;
+}
+div.menu1{
+    z-index: 50;
+    animation:1s recargadiv1 1;
+    background-color: rgb(52, 165, 99);
+    width: 100%;
+    height: 14%;
+    font-size:20px;
+    border-bottom: 6px rgb(3, 54, 23) solid;
+    border-top: 5px rgb(3, 54, 23) solid;
+    position: fixed;
+    top: 0%;
+    /* overflow: hidden; */
+}
+div.space{
+    margin:120px;
+}
+a#div1m{
+    left: 10%;
+}
+a#div2m{
+    left: 27%;
+}
+a#div3m{
+    left: 48%;
+}
+a#div4m{
+    left: 70%;
+}
+a.menua1{
+    background: rgb(54, 204, 116);
+    text-decoration: none;
+    text-transform: capitalize;
+    color:white;
+    font-size: 40px;
+    text-shadow:rgb(27, 80, 179) 2px 0;
+    margin:40px;
+    margin-bottom:20px;
+    padding:10px;
+    position: fixed;
+    bottom:84%;
+    border: 3px solid black;
+    font-weight: bold;
+    border-width: thin;
+}
+a.menua1:hover{
+    background: rgba(red, green, blue, alpha);
+    font-size:38px;
+    border: 3px solid black;
+    animation: infinite change_color1 .8s;
+}
+@keyframes change_color1{
+    40%{
+        border: 3px solid black;
+        opacity: 0.6;
+    }
+    80%{
+        border: 3px solid black;
+    }
+}
+@keyframes recargadiv1{
+    30%{
+        background: rgb(6, 148, 65);
+    }
+}

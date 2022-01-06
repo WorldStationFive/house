@@ -19,9 +19,9 @@
   /**
    * Remove the margin in all browsers.
    */
-  
+  }
   body {
-    margin: 0;
+    margin: 0px;
   }
   
   /**
@@ -350,6 +350,7 @@
 
   .clearfix{
     clear:both;
+    margin: 15%;
   }
   
   #layercss1{
@@ -383,7 +384,7 @@
     padding-left:15px;
   }
   body{
-    background-color: rgba(143, 238, 255, 0.424)
+    background-color: rgb(140, 185, 223);
   }
  /* .li1{
     width: 400px;
@@ -415,79 +416,142 @@
   }
 
   */
-
-  a {
-    outline: none;
-    text-decoration: none;
-    display: inline-block;
-    width: 19.5%;
-    margin-right: 0.625%;
-    text-align: center;
-    line-height: 3;
-    color: black;
-  }
   
   li:last-child a {
     margin-right: 0;
   }
   
   a:link, a:visited, a:focus {
-    background: yellow;
+    background: rgba(6, 59, 204, 0.185);
     width: 150px;
     height: 80px;
   }
   
   a:hover {
-    background: orange;
+    background:2px rgba(33, 76, 195, 0.602);
+    animation: infinite change_color1 0.8s;
   }
   
   a:active {
-    background: red;
+    background: rgba(27, 148, 179, 0.692);
     color: white;
+    animation: 1s click1;
   }
+  nav{
+    position:fixed;
+    background:lightblue;
+    animation: recargadiv1;
+    background-image: url(banner11.jpg);
+    height:120px;
+    width: 100%;
+    border-color: blue;
+    border-top: 2px solid rgb(0, 195, 255);
+    border-bottom: 5px solid rgb(3, 173, 224);
+  }
+  @keyframes click1{
+    40%{
+        border-radius: 500px 500px 500px 500px;
+        opacity: 0;
+        margin-top: 15%;
+    }
+}
+  @keyframes recargadiv1{
+    30%{
+        opacity: 0.8;
+    }
+}
 
+body{
+background-color: rgba(47, 224, 23, 0.623);
+  font-family: cursive;
+  position:center;
+}
+ul{
+  margin-left:15%;
+}
   nav ul li{
-    float:left;
+    display:inline-block;
+    float: center;
     list-style: none;
     margin: 15px;
-    margin-top:-2.5px;
-    border: 5px outset;
+    margin-left:30px;
+    margin-top:5px;
+    margin-right: 40px;
+    border: 3px solid black;
+      border-top-width: 3px;
+      border-right-width: 3px;
+      border-bottom-width: 3px;
+      border-left-width: 3px;
     /*line-height:100px; */
     width: 150px;
     height: 80px;
-    border-color: rgb(0, 38, 255);
+    border: 3px solid black;
     border-radius: 3px;
     font-size:27px;
-    font-style: italic;
+    text-decoration: none;
     text-shadow: 1px 1px lightblue;
+    color: white;
+    font-weight: bold;
+    border-width: thin;
   }
-  nav{
-    background:lightblue;
-    height:120px;
-    border-color: blue;
-    border-top: 2px solid rgb(0, 195, 255);
-    border-bottom: 5px solid rgb(0, 195, 255);
+  a {
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    width: 19.5%;
+    text-align: center;
+    line-height: 3;
+    color: rgb(255, 255, 255);
+    padding-right: 50px;
+    padding-left: 15px; 
+    font-family: Verdana;
+    border: 2px solid rgba(255, 255, 255, 0.274);
+  }
 
-  }
   
   #world1{
     /* background:url('../images/NEWLOGO.jpg') no-repeat center center; */
     /* background-size:90px 30px; */
     /* margin: 0 auto; */
+    all:unset;
     display:block;
-    margin: 5px;
-    margin-left:90%;
+    float:left;
+    position:absolute;
+    margin: 0px;
     width: 80px;
+    margin-left: 25px;
+    margin-top:15px;
     height: 80px;
     max-width: 100px;
     border:3px inset rgb(107, 179, 197);
     border-radius:30px 30px 30px 30px;
+    animation: 0.8s recargaplogo2;
 }
+
+@keyframes recargaplogo2{
+  40%{
+      background: rgba(255, 255, 255, 0.63);
+      opacity: 0
+      all:unset;
+      display:block;
+      position:absolute;
+      margin: 0px;
+      width: 85px;
+      margin-left: 25px;
+      margin-top:15px;
+      height: 85px;
+      max-width: 200px;
+      max-height:200px;
+      border:3px inset rgb(107, 179, 197);
+      border-radius: 0px;
+  }
+  }
+}
+
 .centrar{
   margin:auto;
   display:block;
 }
-
 
   #nombre1, #nombre2, #mensaje1, #comentario{
     background-color: rgb(187, 193, 211);
@@ -496,10 +560,48 @@
     border: 1px solid rgb(6, 83, 6);
    /* outline:none; */
   }
-  
+
   header{
     height:80px;
     width:100%;
     line-height: 40px;
+    position:fixed;
+    top:0px;
+    left:0;
   }
-     /* ready */
+  #img11{
+    all:unset;
+    top: 0px;
+    padding:none; 
+    border:none;
+    margin:none;
+    display:block;
+    opacity:60%;
+    width:100%;
+    height:100%;
+    left:0%;
+    position: absolute;
+  }
+  #unset{
+    all:unset;
+  }
+  .navimg{
+    all:"unset";
+  }
+     /* ready 2*/
+
+ @keyframes change_color1{
+      40%{
+          border: 2px solid rgb(255, 255, 255);
+          opacity: 0.3;
+      }
+      80%{
+          border: 2px solid rgb(255, 255, 255);
+      }
+}
+  @keyframes recargap1{
+    30%{
+        background: rgb(255, 255, 255);
+        opacity: 0
+    }
+}
