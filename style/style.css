@@ -605,3 +605,24 @@ ul{
         opacity: 0
     }
 }
+footer{
+  background: rgba(0, 0, 0, 0.657);
+  color:white;
+  text-align:center;
+  height: 50px;
+  line-height: 50px;
+}
+
+#comentarios1{
+  float:left;
+  width:calc(80% - 80px);
+  min-height: 500px;
+  background: blue;
+  padding: 40px;
+}
+.article1{
+  color:white;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-bottom:2px solid #eee;
+}
