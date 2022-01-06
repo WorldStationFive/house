@@ -348,10 +348,7 @@
     display: none;
   }
 
-  .clearfix{
-    clear:both;
-    margin: 15%;
-  }
+
   
   #layercss1{
     /* background:url('../images/NEWLOGO.jpg') no-repeat center center; */
@@ -615,14 +612,22 @@ footer{
 
 #comentarios1{
   float:left;
-  width:calc(80% - 80px);
-  min-height: 500px;
+  width:calc(100%);
+  min-height: 100px;
   background: blue;
-  padding: 40px;
+  padding: 30px;
+  margin-bottom: 1%;
 }
 .article1{
   color:white;
   margin-top: 15px;
-  margin-bottom: 15px;
-  border-bottom:2px solid #eee;
+  margin-bottom: 10px;
+  border-bottom:1px solid #eee;
+}
+.article1 h2{
+  font-size: 25px;
+}
+.clearfix{
+  clear:both;
+  margin: 15%;
 }
